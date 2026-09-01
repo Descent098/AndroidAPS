@@ -22,7 +22,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.prerequisites_build, true))
                 .option(Option(R.string.prerequisites_pump, true))
                 .option(Option(R.string.prerequisites_beanandroiddeveloper, false))
-                .hint(Hint(R.string.prerequisites_hint1))
+                .hint(Hint("1,2,3"))
                 .learned(Learned(R.string.objectives_exam_learned_prerequisites))
         )
         tasks.add(
@@ -31,7 +31,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.prerequisites2_device, true))
                 .option(Option(R.string.prerequisites2_internet, false))
                 .option(Option(R.string.prerequisites2_supportedcgm, true))
-                .hint(Hint(R.string.prerequisites2_hint1))
+                .hint(Hint("1, 2, 4"))
                 .learned(Learned(R.string.objectives_exam_learned_prerequisites2))
         )
         tasks.add(
@@ -40,7 +40,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.basaltest_havingregularhighlow, true))
                 .option(Option(R.string.basaltest_weekly, false))
                 .option(Option(R.string.basaltest_beforeloop, true))
-                .hint(Hint(R.string.basaltest_hint1))
+                .hint(Hint("2,4"))
                 .learned(Learned(R.string.objectives_exam_learned_basaltest))
         )
         tasks.add(
@@ -49,7 +49,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.dia_minimumis5h, true))
                 .option(Option(R.string.dia_meaningisequaltodiapump, false))
                 .option(Option(R.string.dia_valuemustbedetermined, true))
-                .hint(Hint(R.string.dia_hint1))
+                .hint(Hint("1,2,4"))
                 .learned(Learned(R.string.objectives_exam_learned_dia))
         )
         tasks.add(
@@ -58,7 +58,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.isf_preferences, false))
                 .option(Option(R.string.isf_increasingvalue, false))
                 .option(Option(R.string.isf_noeffect, false))
-                .hint(Hint(R.string.isf_hint1))
+                .hint(Hint("1"))
                 .learned(Learned(R.string.objectives_exam_learned_isf))
         )
         tasks.add(
@@ -67,7 +67,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.ic_decreasingvalue, false))
                 .option(Option(R.string.ic_multiple, true))
                 .option(Option(R.string.ic_isf, false))
-                .hint(Hint(R.string.ic_hint1))
+                .hint(Hint("1,3"))
                 .learned(Learned(R.string.objectives_exam_learned_ic))
         )
         tasks.add(
@@ -76,7 +76,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.hypott_exercise, false))
                 .option(Option(R.string.hypott_wrongbasal, false))
                 .option(Option(R.string.hypott_0basal, false))
-                .hint(Hint(R.string.hypott_hint1))
+                .hint(Hint("1"))
                 .learned(Learned(R.string.objectives_exam_learned_hypott))
         )
         tasks.add(
@@ -85,7 +85,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.profileswitch_isfhigher, true))
                 .option(Option(R.string.profileswitch_iclower, false))
                 .option(Option(R.string.profileswitch_unchanged, false))
-                .hint(Hint(R.string.profileswitch_hint1))
+                .hint(Hint("1,2"))
                 .learned(Learned(R.string.objectives_exam_learned_profileswitch))
         )
         tasks.add(
@@ -94,7 +94,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.profileswitch2_basalhigher, true))
                 .option(Option(R.string.profileswitch2_bgunchanged, true))
                 .option(Option(R.string.profileswitch2_isfhigher, false))
-                .hint(Hint(R.string.profileswitch_hint1))
+                .hint(Hint("2,3"))
         )
         tasks.add(
             ExamTask(this, R.string.profileswitchtime_label, R.string.profileswitchtime_iwant, "profileswitchtime")
@@ -102,7 +102,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.profileswitchtime__2, true))
                 .option(Option(R.string.profileswitchtime_tt, false))
                 .option(Option(R.string.profileswitchtime_100, false))
-                .hint(Hint(R.string.profileswitchtime_hint1))
+                .hint(Hint("2"))
                 .learned(Learned(R.string.objectives_exam_learned_profileswitchtime))
         )
         tasks.add(
@@ -111,7 +111,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.profileswitch4_internet, true))
                 .option(Option(R.string.profileswitch4_sufficient, false))
                 .option(Option(R.string.profileswitch4_multi, true))
-                .hint(Hint(R.string.profileswitch_hint1))
+                .hint(Hint("1,2,4"))
                 .learned(Learned(R.string.objectives_exam_learned_profileswitch4))
         )
         tasks.add(
@@ -120,7 +120,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.exerciseprofile_switchprofilebelow100, true))
                 .option(Option(R.string.exerciseprofile_suspendloop, false))
                 .option(Option(R.string.exerciseprofile_leaveat100, false))
-                .hint(Hint(R.string.exerciseprofile_hint1))
+                .hint(Hint("2"))
                 .learned(Learned(R.string.objectives_exam_learned_exercise))
         )
         tasks.add(
@@ -129,7 +129,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.exercise_setfinished, false))
                 .option(Option(R.string.exercise_setunchanged, false))
                 .option(Option(R.string.exercise_15g, false))
-                .hint(Hint(R.string.exercise_hint1))
+                .hint(Hint("1"))
                 .learned(Learned(R.string.objectives_exam_learned_exercise2))
         )
         tasks.add(
@@ -138,7 +138,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.noisycgm_pause, true))
                 .option(Option(R.string.noisycgm_replacesensor, true))
                 .option(Option(R.string.noisycgm_checksmoothing, true))
-                .hint(Hint(R.string.noisycgm_hint1))
+                .hint(Hint("2,3,4"))
                 .learned(Learned(R.string.objectives_exam_learned_noisycgm))
         )
         tasks.add(
@@ -147,7 +147,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.pumpdisconnect_missinginsulin, true))
                 .option(Option(R.string.pumpdisconnect_notstop, false))
                 .option(Option(R.string.pumpdisconnect_openloop, false))
-                .hint(Hint(R.string.pumpdisconnect_hint1))
+                .hint(Hint("2"))
                 .learned(Learned(R.string.objectives_exam_learned_pumpdisconnect))
         )
         tasks.add(
@@ -156,7 +156,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.insulin_humalog, false))
                 .option(Option(R.string.insulin_actrapid, false))
                 .option(Option(R.string.insulin_fiasp, true))
-                .hint(Hint(R.string.insulin_hint1))
+                .hint(Hint("4"))
                 .learned(Learned(R.string.objectives_exam_learned_insulin))
         )
         tasks.add(
@@ -165,7 +165,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.sensitivity_edit, false))
                 .option(Option(R.string.sensitivity_cannula, true))
                 .option(Option(R.string.sensitivity_time, true))
-                .hint(Hint(R.string.sensitivity_hint1))
+                .hint(Hint("1,3,4"))
                 .hint(Hint(R.string.sensitivity_hint2))
                 .learned(Learned(R.string.objectives_exam_learned_sensitivity))
         )
@@ -175,7 +175,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.objectives_afterobjective, true))
                 .option(Option(R.string.objectives_afterchange, true))
                 .option(Option(R.string.objectives_afterinitialsetup, true))
-                .hint(Hint(R.string.objectives_hint1))
+                .hint(Hint("2,3,4"))
                 .hint(Hint(R.string.objectives_hint2))
                 .learned(Learned(R.string.objectives_exam_learned_objectives))
         )
@@ -185,7 +185,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.objectives2_internalstorage, true))
                 .option(Option(R.string.objectives2_cloud, true))
                 .option(Option(R.string.objectives2_easyrestore, false))
-                .hint(Hint(R.string.objectives_hint1))
+                .hint(Hint("1,2,3"))
                 .hint(Hint(R.string.objectives_hint2))
                 .learned(Learned(R.string.objectives_exam_learned_objectives2))
         )
@@ -195,7 +195,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.update_askfriend, false))
                 .option(Option(R.string.update_keys, true))
                 .option(Option(R.string.update_asap, true))
-                .hint(Hint(R.string.update_hint1))
+                .hint(Hint("1,3,4"))
         )
         tasks.add(
             ExamTask(this, R.string.troubleshooting_label, R.string.troubleshooting_wheretoask, "troubleshooting")
@@ -204,10 +204,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.troubleshooting_discord, true))
                 .option(Option(R.string.troubleshooting_github, true))
                 .option(Option(R.string.troubleshooting_yourendo, false))
-                .hint(Hint(R.string.troubleshooting_hint1))
-                .hint(Hint(R.string.troubleshooting_hint2))
-                .hint(Hint(R.string.troubleshooting_hint3))
-                .hint(Hint(R.string.troubleshooting_hint4))
+                .hint(Hint("1,2,3,4"))
         )
         tasks.add(
             ExamTask(this, R.string.wrongcarbs_label, R.string.wrongcarbs_whattodo, "wrongcarbs")
@@ -215,6 +212,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.wrongcarbs_treatmentstab, true))
                 .option(Option(R.string.wrongcarbs_donothing, false))
                 .option(Option(R.string.wrongcarbs_bolus, false))
+                .hint(Hint("2"))
                 .learned(Learned(R.string.objectives_exam_learned_wrongcarbs))
         )
         tasks.add(
@@ -222,7 +220,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.wronginsulin_careportal, false))
                 .option(Option(R.string.wronginsulin_compare, true))
                 .option(Option(R.string.wronginsulin_prime, true))
-                .option(Option(R.string.wrongcarbs_donothing, false))
+                .option(Option(R.string.wrongcarbs_donothing, false)).hint(Hint("2,3"))
         )
         tasks.add(
             ExamTask(this, app.aaps.core.ui.R.string.iob_label, R.string.blank, "iob")
@@ -230,6 +228,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.iob_hightemp, false))
                 .option(Option(R.string.iob_negiob, true))
                 .option(Option(R.string.iob_posiob, true))
+                .hint(Hint("1,3,4"))
                 .learned(Learned(R.string.objectives_exam_learned_iob))
         )
         tasks.add(
@@ -237,21 +236,21 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.cob_longer, true))
                 .option(Option(R.string.cob_shorter, false))
                 .option(Option(R.string.cob_no_effect, false))
-                .hint(Hint(R.string.cob_hint1))
+                .hint(Hint("1"))
         )
         tasks.add(
             ExamTask(this, R.string.cob_label, R.string.cob2_question, "cob2")
                 .option(Option(R.string.cob2_longer, false))
                 .option(Option(R.string.cob2_shorter, true))
                 .option(Option(R.string.cob2_no_effect, false))
-                .hint(Hint(R.string.cob_hint1))
+                .hint(Hint("2"))
         )
         tasks.add(
             ExamTask(this, R.string.cob_label, R.string.cob3_question, "cob3")
                 .option(Option(R.string.cob3_longer, false))
                 .option(Option(R.string.cob3_shorter, false))
                 .option(Option(R.string.cob3_no_effect, true))
-                .hint(Hint(R.string.cob_hint1))
+                .hint(Hint("3"))
                 .learned(Learned(R.string.objectives_exam_learned_cob))
         )
         tasks.add(
@@ -260,8 +259,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.breadgrams_exchange, false))
                 .option(Option(R.string.breadgrams_decay, true))
                 .option(Option(R.string.breadgrams_calc, true))
-                .hint(Hint(R.string.breadgrams_hint1))
-                .hint(Hint(R.string.breadgrams_hint2))
+                .hint(Hint("1,3,4"))
                 .learned(Learned(R.string.objectives_exam_learned_breadgrams))
         )
         tasks.add(
@@ -270,7 +268,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.extendedcarbs_free, false))
                 .option(Option(R.string.extendedcarbs_fat, true))
                 .option(Option(R.string.extendedcarbs_rescue, false))
-                .hint(Hint(R.string.extendedcarbs_hint1))
+                .hint(Hint("1,3"))
                 .learned(Learned(R.string.objectives_exam_learned_ecarbs))
         )
         tasks.add(
@@ -279,7 +277,7 @@ class Objective2 @Inject constructor(
                 .option(Option(R.string.nsclient_dexcomfollow, true))
                 .option(Option(R.string.nsclient_data, true))
                 .option(Option(R.string.nsclient_fullcontrol, false))
-                .hint(Hint(R.string.nsclient_hint1))
+                .hint(Hint("1,2,3"))
                 .learned(Learned(R.string.objectives_exam_learned_nsclient))
         )
         tasks.add(
